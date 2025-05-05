@@ -106,5 +106,6 @@ Custom permissions defined in the configuration file for each command
 
 **Support**
 If you encounter any issues or have questions about the plugin, please create an issue on GitHub.
-
+**License**
+This plugin is released under the MIT License. See the LICENSE file for details.
 
