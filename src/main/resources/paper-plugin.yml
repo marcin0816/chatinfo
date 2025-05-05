@@ -1,0 +1,14 @@
+name: ChatInformator
+version: '${version}'
+main: dc.marcin0816.chatInfoCommand.Main
+api-version: '1.21'
+authors: [Marcin]
+description: Plugin for displaying messages in chat after invoking commands
+commands:
+  chatinfo:
+    description: Administrative command for managing messages
+    usage: /<command> [reload|list]
+    permission: chatinformator.admin
+  info:
+    description: Default informational command
+    usage: /<command>

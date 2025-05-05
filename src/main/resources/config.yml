@@ -1,0 +1,43 @@
+# ChatInformator - configuration
+# Available colors: &0, &1, &2, &3, &4, &5, &6, &7, &8, &9, &a, &b, &c, &d, &e, &f
+# Available formatting: &l (bold), &n (underline), &o (italic), &k (magic), &m (strikethrough), &r (reset)
+
+# Message displayed when reloading configuration
+reload-message: "&aConfiguration has been reloaded!"
+
+# Message displayed when permission is denied
+no-permission-message: "&cYou don't have permission to use this command!"
+
+# Commands and their associated messages
+# Format: command_name: ["message 1", "message 2", ...]
+commands:
+  info:
+    messages:
+      - "&8&l========== &6&lINFORMATION &8&l=========="
+      - "&eWelcome to the server! Have fun!"
+      - "&aOur Discord: &bdc.yourserver.com"
+      - "&aWebsite: &bwww.yourserver.com"
+      - "&8&l==============================="
+    permission: "" # Empty value means no permissions required
+
+  rules:
+    messages:
+      - "&8&l========== &c&lRULES &8&l=========="
+      - "&71. No spamming in chat"
+      - "&72. No advertising other servers"
+      - "&73. Be nice to other players"
+      - "&74. Respect server administration"
+      - "&8&l==============================="
+    permission: "" # Empty value means no permissions required
+
+  vip:
+    messages:
+      - "&8&l========== &e&lVIP RANK &8&l=========="
+      - "&ePurchase VIP rank to receive:"
+      - "&6- Access to special commands"
+      - "&6- More space on plots"
+      - "&6- Colored nickname in chat"
+      - "&6- Access to VIP room"
+      - "&eTo buy, visit: &bshop.yourserver.com"
+      - "&8&l==============================="
+    permission: "" # Empty value means no permissions required
