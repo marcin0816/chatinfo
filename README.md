@@ -91,9 +91,25 @@ commands:
 
 ## Requirements
 
-- Paper 1.21.4+
 - Java 21+
 - PlaceholderAPI *(optional)*
+
+## Compatibility
+
+| Minecraft Version | Status |
+|---|---|
+| 1.21.4 | ✅ Supported |
+| 1.21.5 (Spring to Life) | ✅ Supported |
+| 1.21.6 (Chase the Skies) | ✅ Supported |
+| 1.21.7 | ✅ Supported |
+| 1.21.8 | ✅ Supported |
+| 1.21.9 (The Copper Age) | ✅ Supported |
+| 1.21.10 | ✅ Supported |
+| 1.21.11 (Mounts of Mayhem) | ✅ Supported |
+| 26.1 (Tiny Takeover) | ✅ Supported |
+| 26.1.2 *(latest)* | ✅ Supported |
+
+> Requires **Paper** (not Spigot/Vanilla). Built on Paper 1.21.4 API — works on all newer versions.
 
 ## License
 
