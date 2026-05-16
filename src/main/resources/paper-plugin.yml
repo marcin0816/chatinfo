@@ -1,0 +1,21 @@
+name: ChatInfo
+version: '${version}'
+main: dc.marcin0816.chatInfoCommand.Main
+api-version: '1.21.4'
+authors: [Marcin]
+description: Plugin for displaying configurable chat messages via custom commands
+dependencies:
+  server:
+    PlaceholderAPI:
+      load: BEFORE
+      required: false
+      join-classpath: true
+commands:
+  chatinfo:
+    description: Admin command for managing informational commands
+    usage: /<command> [reload|list|create|edit|delete|setperm]
+    permission: chatinformator.admin
+permissions:
+  chatinformator.admin:
+    description: Access to ChatInfo admin commands
+    default: op

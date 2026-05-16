@@ -1,0 +1,56 @@
+# ChatInfo - configuration
+#
+# Supports BOTH legacy codes AND MiniMessage format:
+#   Legacy:      &6Bold text &lhere  |  &cRed  &aGreen  &bAqua
+#   MiniMessage: <gold>Text</gold>   |  <red>  <green>  <aqua>
+#   Hex colors:  &#FF5500Text (legacy)  |  <color:#FF5500>Text</color> (MiniMessage)
+#   Gradients:   <gradient:#FF0000:#0000FF>Rainbow</gradient>
+#   Click/Hover: <click:open_url:'https://example.com'>Click me!</click>
+#   PlaceholderAPI: %player_name%, %server_online% (requires PlaceholderAPI)
+#
+# MiniMessage reference: https://docs.advntr.dev/minimessage/format.html
+
+reload-message: "<green><bold>✔</bold> Configuration reloaded successfully!"
+no-permission-message: "<red>✘ You don't have permission to use this command!"
+cooldown-message: "<red>✘ Please wait <yellow><bold>{time}s</bold></yellow> before using this command again!"
+
+commands:
+  info:
+    description: "Server information"
+    aliases: []
+    cooldown: 0
+    permission: ""
+    messages:
+      - "<dark_gray>━━━━━━━━ <gold><bold>SERVER INFO</bold></gold> ━━━━━━━━"
+      - "<yellow>  Welcome to the server! Have fun!"
+      - "<green>  Discord: <aqua><click:open_url:'https://dc.yourserver.com'>dc.yourserver.com</click>"
+      - "<green>  Website: <aqua><click:open_url:'https://www.yourserver.com'>www.yourserver.com</click>"
+      - "<dark_gray>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+
+  rules:
+    description: "Server rules"
+    aliases: [rule, zasady]
+    cooldown: 5
+    permission: ""
+    messages:
+      - "<dark_gray>━━━━━━━━━━ <red><bold>RULES</bold></red> ━━━━━━━━━━"
+      - "<gray>  <white>1.</white> No spamming in chat"
+      - "<gray>  <white>2.</white> No advertising other servers"
+      - "<gray>  <white>3.</white> Be respectful to other players"
+      - "<gray>  <white>4.</white> Respect server administration"
+      - "<dark_gray>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+
+  vip:
+    description: "VIP rank information"
+    aliases: [rank, donate, sklep]
+    cooldown: 10
+    permission: ""
+    messages:
+      - "<dark_gray>━━━━━━━━ <yellow><bold>VIP RANK</bold></yellow> ━━━━━━━━"
+      - "<yellow>  Purchase VIP to unlock:"
+      - "<gold>  ➤ Access to exclusive commands"
+      - "<gold>  ➤ Extra plot space"
+      - "<gold>  ➤ Colored nickname in chat"
+      - "<gold>  ➤ Access to VIP lounge"
+      - "<yellow>  Buy at: <aqua><click:open_url:'https://shop.yourserver.com'><underlined>shop.yourserver.com</underlined></click>"
+      - "<dark_gray>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
